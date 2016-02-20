@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-<<<<<<< HEAD
 from django.db import models, migrations
-=======
-from django.db import migrations, models
->>>>>>> 3540c61990cc0a7c3a93990db2645c67449abcdc
 from django.conf import settings
 
 
@@ -27,17 +23,6 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-<<<<<<< HEAD
-=======
-            name='Request',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('message', models.TextField()),
-                ('requester', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
-            ],
-        ),
-        migrations.CreateModel(
->>>>>>> 3540c61990cc0a7c3a93990db2645c67449abcdc
             name='Trip',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
@@ -50,12 +35,4 @@ class Migration(migrations.Migration):
                 ('requester', models.ForeignKey(to=settings.AUTH_USER_MODEL, blank=True)),
             ],
         ),
-<<<<<<< HEAD
-=======
-        migrations.AddField(
-            model_name='request',
-            name='trip',
-            field=models.ForeignKey(to='trips.Trip'),
-        ),
->>>>>>> 3540c61990cc0a7c3a93990db2645c67449abcdc
     ]
