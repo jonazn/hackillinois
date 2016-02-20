@@ -24,8 +24,8 @@ class Trip(models.Model):
     price = models.IntegerField()
     date = models.DateTimeField()
     hotel = models.CharField(max_length=200)
-    owner = models.ForeignKey(User, related_name="trip_owner")
-    requester = models.ForeignKey(User, blank=True)
+    owner = models.ForeignKey(User, related_name="trips")
+    requester = models.ForeignKey(User, related_name="requested", blank=True)
     private = models.BooleanField(default=False)
 
 class Request(models.Model):
